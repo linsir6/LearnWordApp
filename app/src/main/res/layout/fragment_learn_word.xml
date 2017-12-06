@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:gravity="center"
+        android:text="今日已背单词:(0/100)" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/count"
+        android:background="#dfdfdf" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view2"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="单词：hello\n词性：n\n含义：你好" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+
+        android:layout_height="60dp"
+        android:layout_above="@+id/next"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/known"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="#42a5f5"
+            android:gravity="center"
+            android:text="认识"
+            android:textColor="#FFF" />
+
+        <TextView
+            android:id="@+id/unknown"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="#42a5f5"
+            android:gravity="center"
+            android:text="不认识"
+            android:textColor="#FFF" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="#42a5f5"
+        android:gravity="center"
+        android:text="下一个单词"
+        android:textColor="#FFF" />
+
+
+</RelativeLayout>
